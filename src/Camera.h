@@ -1,7 +1,7 @@
 #pragma once
 #include "Shader.h"
 
-using namespace glm;
+
 
 class Camera
 {
@@ -22,7 +22,7 @@ public:
 	Camera(int width, int height, vec3 postion);
 	void updateMatrix(float FOV, float nearPlane, float farPlane);
 
-	void cameraMatrix(Shader& shader, const char* uniform);
+	void Matrix(Shader& shader, const char* uniform);
 	void inputs(GLFWwindow* window);
 	void mouse(double xOffset, double yOffset);
 	
